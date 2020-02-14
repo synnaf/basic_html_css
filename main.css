@@ -1,0 +1,122 @@
+/*MOBILE DEVICES IPHONE 667px*/
+body {
+    margin: 0;
+} 
+article {
+    width: 100%;
+    background-color: white; 
+}
+/*HEADER*/
+header {
+    width: 100%;
+    height: 100px; 
+    background-color: blue; 
+}
+/*NAVIGATION*/ 
+nav {
+    padding: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+a {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif, monospace; 
+    font-size: 16px;
+    text-decoration: none; 
+    color:white; 
+}
+a:hover {
+    font-size: 22px;
+}
+a:visited {
+    color:white;
+}
+/*COLUMN STYLING AND LAYOUT*/
+article > div {
+    background-color: linen; 
+    width: 70%;
+}
+/* CENTER CONTAINERS IN LAYOUT. 1400px = 100%, 462px = 33% */ 
+article > div {
+    margin-left: 10%;
+}
+/*STYLES CONTAINER CONTENT*/
+div {
+    margin: 20px; 
+    padding: 20px;
+}
+span { 
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif, monospace;
+}
+h1, h2 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif, monospace;
+    margin-bottom: 10px;
+}
+/*FOOTER*/
+footer {
+    background-color: lavenderblush;
+    padding: 15px;
+    line-height: 50px;
+    text-align: center;  
+    font-family: 'Poppins', sans-serif, monospace;
+    font-size: 12px; 
+}
+/*IPAD 768px*/
+@media screen and (min-width: 768px) {
+    /*CHANGE MENU ALIGNMENT*/
+    nav {
+        text-align: right;
+    }
+    /* CENTER CONTAINERS IN LAYOUT */ 
+    article > div {
+    margin-left: 10%;
+    margin-right:10%;
+    }
+}
+/*IPAD 1024px*/
+@media screen and (min-width: 1024px) {
+    /*CHANGE PAGE LAYOUT TO COLUMNS */ 
+    article {
+        height: 500px;
+        position:relative;
+    }
+    article > div {
+        width: 200px; 
+    }
+
+    div { 
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container1 {
+        top: 50%; /* VERTICAL ALIGNMENT*/ 
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+    .container2 {
+        top: 50%; /* VERTICAL ALIGNMENT*/ 
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .container3 {
+        top: 50%; /* VERTICAL ALIGNMENT*/ 
+        left: 70%;
+        transform: translate(-50%, -50%); 
+    }
+}
+/*DESKTOP 1024px*/
+@media screen and (min-width: 1024px) {
+        /*CHANGE COLUMN STYLES*/
+        article {
+            height: 600px;
+        }
+        article > div {
+            width: 300px; 
+            height:500px;
+        }
+}
